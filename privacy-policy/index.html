@@ -25,7 +25,7 @@
 <main>
   <h1>Privacy Policy</h1>
   <p class="muted">NATO Phonetic Trainer — Android app (<code>me.scheria.nato_phonetic_trainer</code>)<br>
-  Effective date: 19 October 2026</p>
+  Effective date: 28 October 2026 (app version 1.1.0 and later)</p>
 
   <h2>Summary</h2>
   <p><strong>This app does not collect, store or transmit any personal data.</strong> There is nothing
@@ -36,11 +36,20 @@
     <li>No account, sign-in or profile — the app opens straight to the alphabet.</li>
     <li>No personal data is collected: no name, e-mail, phone number, contacts, location, camera,
         microphone or files.</li>
-    <li>No analytics, no advertising, no crash reporting, no tracking scripts and no third-party SDKs.</li>
-    <li>No network access at all: the reference content is bundled inside the app, so it works in
-        airplane mode. The app declares no Android permissions.</li>
+    <li>No analytics, advertising, crash-reporting or tracking libraries are compiled into the app.</li>
+    <li>No network access from this app: the reference content is bundled inside it, and the app holds
+        no internet permission, so it works in airplane mode. It requests no user-facing Android
+        permissions.</li>
     <li>No data is sent to me or to anyone else — there is no server behind this app.</li>
   </ul>
+
+  <h2>Spoken pronunciation</h2>
+  <p>Tapping a letter hands that single word to the text-to-speech engine already installed on your
+  device (Android's system speech service). This app does not record audio, does not store anything
+  about what you tapped, and cannot send anything anywhere — it has no internet permission. The speech
+  engine is a separate system component with its own privacy policy: some engines can optionally use
+  cloud voices for languages they have not downloaded on-device. That behaviour belongs to the engine,
+  is not controlled by this app, and sending the word <em>“Alpha”</em> to it involves no personal data.</p>
 
   <h2>Information on your device</h2>
   <p>The app has nothing to remember yet. If a later version stores anything locally (for example a
@@ -54,7 +63,9 @@
 
   <h2>Changes to this policy</h2>
   <p>If the app ever starts handling data, this page will be updated and the effective date above
-  changed before the new version reaches Google Play. This page itself is served by GitHub Pages;
+  changed before the new version reaches Google Play. History: 19 October 2026 — first version; 28
+  October 2026 — spoken pronunciation added (app 1.1.0), no change to what is collected, which is
+  nothing. This page itself is served by GitHub Pages;
   that provider may log standard request metadata (IP address, user agent) for its own infrastructure
   — that logging belongs to GitHub, not to this app, and the app never makes such requests.</p>
 
@@ -65,7 +76,7 @@
   </div>
 
   <p class="muted" style="margin-top:2rem">Data-safety summary for Google Play: no data collected,
-  no data shared, no permissions requested, no ads shown.</p>
+  no data shared, no runtime permissions requested, no ads shown.</p>
 </main>
 </body>
 </html>
