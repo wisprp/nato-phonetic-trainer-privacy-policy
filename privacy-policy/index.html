@@ -25,7 +25,7 @@
 <main>
   <h1>Privacy Policy</h1>
   <p class="muted">NATO Phonetic Trainer — Android app (<code>me.scheria.nato_phonetic_trainer</code>)<br>
-  Effective date: 28 October 2026 (app version 1.1.0 and later)</p>
+  Effective date: 12 November 2026 (app versions after 1.5.0)</p>
 
   <h2>Summary</h2>
   <p><strong>This app does not collect, store or transmit any personal data.</strong> There is nothing
@@ -33,13 +33,13 @@
 
   <h2>What the app does not do</h2>
   <ul>
-    <li>No account, sign-in or profile — the app opens straight to the alphabet.</li>
+    <li>No account, sign-in or profile — the app opens straight to its start screen.</li>
     <li>No personal data is collected: no name, e-mail, phone number, contacts, location, camera,
-        microphone or files.</li>
+        voice recordings or files.</li>
     <li>No analytics, advertising, crash-reporting or tracking libraries are compiled into the app.</li>
     <li>No network access from this app: the reference content is bundled inside it, and the app holds
-        no internet permission, so it works in airplane mode. It requests no user-facing Android
-        permissions.</li>
+        no internet permission, so it works in airplane mode. The only Android permission it asks
+        for is the microphone, and only when you start speaking practice (see below).</li>
     <li>No data is sent to me or to anyone else — there is no server behind this app.</li>
   </ul>
 
@@ -50,6 +50,20 @@
   engine is a separate system component with its own privacy policy: some engines can optionally use
   cloud voices for languages they have not downloaded on-device. That behaviour belongs to the engine,
   is not controlled by this app, and sending the word <em>“Alpha”</em> to it involves no personal data.</p>
+
+  <h2>Speaking practice (microphone)</h2>
+  <p>In <em>Practice speaking</em> the app shows a letter and you say its code word. When you tap the
+  microphone button the app asks for the microphone permission; you can refuse it, and the rest of the
+  app works without it. After the first tap, each next round listens on its own until the practice ends,
+  you leave the screen, or nothing is heard.</p>
+  <p>Your speech is turned into text by your phone's <strong>on-device</strong> speech recognizer
+  (a system component of Android, e.g. Android System Intelligence on Pixel phones). This app only
+  uses the on-device recognizer, never the one that may send audio to a server, so the audio is processed
+  on your phone. The app receives the recognised text only (for example “Bravo”), compares it with
+  the expected code word, shows it in the round's result and forgets it when you leave the practice. No
+  audio or text is stored or sent anywhere by this app. If the English speech model is missing, the app
+  may ask Android to download it; that download is done by the system, not by this app, which still
+  has no internet permission.</p>
 
   <h2>Information on your device</h2>
   <p>The app has nothing to remember yet. If a later version stores anything locally (for example a
@@ -65,7 +79,8 @@
   <p>If the app ever starts handling data, this page will be updated and the effective date above
   changed before the new version reaches Google Play. History: 19 October 2026 — first version; 28
   October 2026 — spoken pronunciation added (app 1.1.0), no change to what is collected, which is
-  nothing. This page itself is served by GitHub Pages;
+  nothing; 12 November 2026 — speaking practice with on-device speech recognition and the microphone
+  permission added, still nothing collected. This page itself is served by GitHub Pages;
   that provider may log standard request metadata (IP address, user agent) for its own infrastructure
   — that logging belongs to GitHub, not to this app, and the app never makes such requests.</p>
 
@@ -76,7 +91,8 @@
   </div>
 
   <p class="muted" style="margin-top:2rem">Data-safety summary for Google Play: no data collected,
-  no data shared, no runtime permissions requested, no ads shown.</p>
+  no data shared, no ads shown. One runtime permission: the microphone, used only for on-device speech
+  recognition in speaking practice; audio and recognised text never leave the device.</p>
 </main>
 </body>
 </html>
